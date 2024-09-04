@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Listing</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="text-center py-8">
+        <h1 class="text-3xl font-bold">Car Listing</h1>
+        <div class="mt-6">
+            <input type="text" id="searchBar" class="border border-gray-300 rounded py-2 px-4 w-1/2" placeholder="Search for a car...">
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8">
+        <!-- Car List Section -->
+        <div id="carList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Car cards will be listed here -->
+        </div>
+
+        <!-- Car Details Section (Hidden by default) -->
+        <div id="carDetails" class="hidden flex items-center justify-center py-10">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-3/4">
+                <button id="backToList" class="bg-blue-500 text-white py-2 px-4 rounded mb-4">Back to List</button>
+                <div class="flex">
+                    <div class="w-1/2">
+                        <img id="carImage" class="w-full h-auto rounded-lg">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <h2 id="carName" class="text-2xl font-bold mb-4"></h2>
+                        <p id="carDescription" class="mb-4"></p>
+                        <p id="carBrand" class="mb-4"><strong>Brand:</strong> </p>
+                        <p id="carModel" class="mb-4"><strong>Model:</strong> </p>
+                        <p id="carYear" class="mb-4"><strong>Year:</strong> </p>
+                        <div id="carFeatures" class="mb-4">
+                            <h3 class="font-bold">Features:</h3>
+                            <ul class="list-disc list-inside"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

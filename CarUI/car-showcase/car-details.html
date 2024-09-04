@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="text-center py-8">
+        <h1 class="text-3xl font-bold" id="carTitle">Car Details</h1>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8">
+        <!-- Container for the image and details, using flex to align them side-by-side -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex">
+            <!-- Car Image Section -->
+            <div id="carImageContainer" class="w-1/2">
+                <!-- The car image will be dynamically injected here -->
+            </div>
+
+            <!-- Car Details Section -->
+            <div id="carDetailsContainer" class="w-1/2 pl-8">
+                <!-- The car details will be dynamically injected here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="car-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="text-center py-8">
+        <h1 class="text-3xl font-bold">Admin Panel</h1>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8">
+        <div class="bg-white shadow rounded-lg p-6">
+            <h2 class="text-xl font-bold mb-4">Add Car Information</h2>
+
+            <form id="carForm" class="grid grid-cols-1 gap-6">
+                <input type="text" id="brand" class="border p-2" placeholder="Car Brand" required>
+                <input type="text" id="model" class="border p-2" placeholder="Car Model" required>
+                <input type="file" id="image" class="border p-2" required>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Add Car</button>
+            </form>
+
+            <div class="mt-8">
+                <h2 class="text-xl font-bold mb-4">Upload JSON File</h2>
+                <input type="file" id="jsonFile" class="border p-2">
+                <button id="uploadJson" class="bg-blue-500 text-white py-2 px-4 rounded">Upload JSON</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin.ts"></script>
+</body>
+</html>
